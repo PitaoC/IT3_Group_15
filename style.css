@@ -8,7 +8,6 @@
 
 .container {
     font-family: "figtree", sans-serif;
-    background-color: #0f0e0e;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -17,9 +16,19 @@
     
 }
 
+.back-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 .text {
     width: 52%;
-    height: 280px;
+    height: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -53,8 +62,8 @@
 }
 
 .image1:hover {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: 
     0 0 10px rgb(115, 16, 245), 
@@ -70,8 +79,8 @@
     rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 .image2:hover {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: 
     0 0 10px rgb(55, 111, 214), 
@@ -82,13 +91,13 @@
 }
 
 .image1 img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
 .image2 img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
