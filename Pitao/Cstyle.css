@@ -4,58 +4,61 @@
     padding: 0;
     margin: 0;
     font-family: 'Passion One', sans-serif;
+    box-sizing: border-box;
 }
-.container {
+.backicn{
+    height: 80px;
+    background: #000;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.slide-container{
+    height: 750px;
     display: flex;
     justify-content: center;
-    align-self: center;
-    border: solid black 1px;
-    
+    align-items: start;
+    background: #000;
 }
-.box1,.box2,.box3,.box4 {
-    position: absolute;
-    height: 10vh;
-    width: 80%;
-    left: auto;
-    top: 0;
+.slider{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 10px;
+    background: #000000;
 }
-img{
-    width: 80%;
+.slider .slide{
+    z-index: 1;
     position: absolute;
+    width: 100%;
+}
+.slider .slide img{
+    z-index: 1;
+    width: 100%;
     border-radius: 30px;
-    left: 50%;
-    top: 400%;
-    transform: translate(-50%,-50%);
-    animation: zoom-out 30s linear infinite;
-
-    
 }
-.text{
-    width: 60%;
-    top: 0px;
+.slider .slide .text{
+    position: absolute;
+    width: 650px;
+    top: 0;
     right: 0;
-    transform: translate(100px);
-    animation: textup 30s linear infinite;
+    padding: 15px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    position: absolute;
-    width: 45%;
-    height: 60%;
-    color: #fff;
-    border: solid black 1px;
-
+    border: solid #000 1px;
 }
-.text1 h1{
+.slider .slide .text h1{
+    color: #fff;
+    font-size: 45px;
     display: flex;
     justify-content: center;
-}
 
-@keyframes zoom-out{
-    100%{
-        width: 80%;
-    }
+}
+.slider .slide .text p{
+    color: #fff;
+    font-size: 20px;
 }
 
 .box1{
@@ -139,11 +142,21 @@ img{
         visibility: visible;
     }
 }
-@keyframes textup{
-    10%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+
+.navigation{
+    background: #000;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: tramslateX(-50%);
+    z-index: 1;
+}
+
+.navigation a{
+    border-radius: 50%;
+    margin: 40px;
+    margin-top: -40px;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
 }
