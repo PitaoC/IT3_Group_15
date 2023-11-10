@@ -41,24 +41,58 @@
 }
 .slider .slide .text{
     position: absolute;
+    height: 600px;
     width: 650px;
     top: 0;
     right: 0;
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
-    border: solid #000 1px;
+    display: flex;
+    justify-content: center;
 }
 .slider .slide .text h1{
-    color: #fff;
+    color: #5924ec;
     font-size: 45px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 
 }
 .slider .slide .text p{
-    color: #fff;
+    color: #cccccc;
     font-size: 20px;
+}
+.slider .slide .text1 li{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.slider .slide .text1 p1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.slider .slide .text2 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.slider .slide .text2 p1{
+    margin-left: 30px;
+}
+.slider .slide .text2 a{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.slider .slide .text3 a{
+    color: rgb(200, 255, 255);
+    margin-left: 40px;
 }
 
 .box1{
@@ -153,10 +187,32 @@
     z-index: 1;
 }
 
-.navigation a{
-    border-radius: 50%;
+.bar {
     margin: 40px;
     margin-top: -40px;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}   
+    transition: 0.4s;
+    color: white;
+    background-color: #fff;
+    width: 50px;
+    height: 10px;
+    border: solid white 1px;
+    cursor: pointer;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+#img1:checked ~ .box1{
+    margin: 0;
+}
+#img2:checked ~ .box2{
+    margin: 0 ;
+}
+#r3:checked ~ .slider .box3{
+    margin: 0;
+}
+#r4:checked ~ .slider .box4{
+    margin: 0;
+}
