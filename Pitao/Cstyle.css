@@ -1,27 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kay+Pho+Du:wght@700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Passion One', sans-serif;
     box-sizing: border-box;
 }
 .backicn{
-    height: 80px;
     background: #000;
+}
+.backicn a{
+    right: 0px;
+    height: 40px;
+    width: 50px;
     transform: scaleX(-1);
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
 
 }
+
+.intro{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #151516;
+    background-color: #000;
+    font-family: 'Passion One', sans-serif;
+    text-shadow: 
+    0 0 2px rgb(115, 16, 245), 
+    0 0 5px rgb(115, 16, 245), 
+    0 0 10px rgb(115, 16, 245), 
+    0 0 20px rgb(115, 16, 245);
+}
+
 .slide-container{
-    height: 750px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: start;
     background: #000;
 }
+
+.slide-container a{
+    text-decoration: none;
+}
+
 .slider{
     position: relative;
     width: 1200px;
@@ -52,19 +78,26 @@
     justify-content: center;
 }
 .slider .slide .text h1{
-    color: #5924ec;
+    color: rgb(88, 0, 170);
     font-size: 45px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(0, 0, 0),
+    0 0 6px rgb(0, 0, 0), 
+    0 0 12px rgb(0, 0, 0), 
+    0 0 24px rgb(0, 0, 0);
 
 }
 .slider .slide .text p{
-    color: #cccccc;
+    color: #a3a3a3;
     font-size: 20px;
+    font-family: 'Kay Pho Du', serif;
 }
 .slider .slide .text1 li{
-    color: rgb(255, 255, 255);
+    color: rgb(226, 226, 226);
     font-size: 20px;
 }
 
