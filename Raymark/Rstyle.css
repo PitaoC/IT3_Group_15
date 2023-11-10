@@ -1,82 +1,93 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
+* {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    overflow: hidden;
+    font-family: 'Passion One', sans-serif;
+    box-sizing: border-box;
 }
+.backicn{
+    height: 80px;
+    background: #000;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
-.container{
+}
+.slide-container{
+    height: 750px;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: start;
+    background: #000;
 }
-
-.banner1,.banner2,.banner3,.banner4{
-
-    height: 10vh;
-    width: 80%;
+.slider{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 10px;
+    background: #000000;
+}
+.slider .slide{
+    z-index: 1;
     position: absolute;
-    left: auto;
-    top:115px;
-    
-}
-img{
     width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 300%;
-    transform: translate(-50%,-50%);
-    animation: zoom-out 30s linear infinite;
+}
+.slider .slide img{
+    z-index: 1;
+    width: 100%;
     border-radius: 30px;
 }
-
-@keyframes zoom-out {
-    100%{
-        width: 100%;
-    }
-}
-.text-box{
-    width: 60%;
+.slider .slide .text{
     position: absolute;
-    top: 0px;
+    width: 650px;
+    top: 0;
     right: 0;
-    color: #fff;
-    animation: textup 30s linear infinite;
-    transform: translateY(100px);
+    padding: 15px 30px;
     display: flex;
     flex-direction: column;
+   
+    height: 600px;
     justify-content: center;
+}
+.slider .slide .text h1{
+    color: #fff;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+
+}
+.slider .slide .text p{
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+   
+    
+
+}
+slider .slide .text3 p{
+    border: solid #fff 1px;
+    display: flex;
+    justify-content: start;
     align-items: center;
-    border: solid black 5px;
 }
-.text-box h1{
-    margin-bottom: 40px;  
+.slider .slide .text3 a{
+    color: aqua;
 }
-.text-box p{
-    font-size:  14px;
-    line-height: 18px;
-    margin-top: 80xp;
-}
-.text-box spam{
-    background: red;
-    height: 1px;
-    width: 100px;
-    position: absolute;
-    right: 0;
-}
-.banner1{
+.box1{
     animation: slide1 30s linear infinite;
 }
-.banner2{
+.box2{
     animation: slide2 30s linear infinite;
 }
-.banner3{
+.box3{
     animation: slide3 30s linear infinite;
 }
-.banner4{
+.box4{
     animation: slide4 30s linear infinite;
 }
+
 @keyframes slide1{
     0%{
         visibility: visible;
@@ -91,8 +102,8 @@ img{
         visibility: hidden;
     }
     100%{
-        visibility: visible;
-    }  
+        visibility: hidden;
+    }
 }
 @keyframes slide2{
     0%{
@@ -126,7 +137,7 @@ img{
     }
     100%{
         visibility: hidden;
-    } 
+    }
 }
 @keyframes slide4{
     0%{
@@ -144,25 +155,22 @@ img{
     100%{
         visibility: visible;
     }
-    
 }
-@keyframes textup{
-    10%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+
+.navigation{
+    background: #000;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: tramslateX(-50%);
+    z-index: 1;
 }
-.text-box1{
-    animation-delay: 0s;
-}
-.text-box2{
-    animation-delay: 30s;
-}
-.text-box3{
-    animation-delay: 60s;
-}
-.text-box4{
-    animation-delay: 90s;
+
+.navigation a{
+    border-radius: 50%;
+    margin: 40px;
+    margin-top: -40px;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
 }
