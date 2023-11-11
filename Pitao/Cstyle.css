@@ -210,42 +210,108 @@
     }
 }
 
-.navigation{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     background: #000;
-    height: 200px;
+}
+.container a{
+    text-decoration: none;
+}
+.container .conbox{
+    width: 900px;
+    background-color: #585858;
+    padding: 50px;
+    border-radius: 10px;
+}
+.container .conbox .header h1{
+    color: rgb(196, 196, 196);
+    font-size: 45px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(88, 0, 170),
+    0 0 6px rgb(88, 0, 170), 
+    0 0 12px rgb(88, 0, 170), 
+    0 0 24px rgb(88, 0, 170);
+}
+.container .conbox .header h2{
+    color: rgb(196, 196, 196);
+    font-size: 45px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(88, 0, 170),
+    0 0 6px rgb(88, 0, 170), 
+    0 0 12px rgb(88, 0, 170), 
+    0 0 24px rgb(88, 0, 170);
+}
+.container .conbox .header p{
+    color: #ffffff;
+    font-size: 20px;
+}
+.container .conbox .text{
+    height: 600px;
+    width: 650px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: start;
-    transform: tramslateX(-50%);
-    z-index: 1;
+}
+.container .conbox .text h1{
+    color: rgb(196, 196, 196);
+    font-size: 45px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(88, 0, 170),
+    0 0 6px rgb(88, 0, 170), 
+    0 0 12px rgb(88, 0, 170), 
+    0 0 24px rgb(88, 0, 170);
+
 }
 
-.bar {
-    margin: 40px;
-    margin-top: -40px;
-    transition: 0.4s;
-    color: white;
-    background-color: #fff;
-    width: 50px;
-    height: 10px;
-    border: solid white 1px;
-    cursor: pointer;
+.container .conbox .text p{
+    color: #a3a3a3;
+    font-size: 20px;
+    font-family: 'Kay Pho Du', serif;
+}
+.container .conbox .text1 li{
+    color: rgb(226, 226, 226);
+    font-size: 20px;
 }
 
-input[name="r"]{
-    position: absolute;
-    visibility: hidden;
+.container .conbox .text1 p1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container .conbox .text2 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container .conbox .text2 p1{
+    margin-left: 30px;
+}
+.container .conbox .text2 a{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-#img1:checked ~ .box1{
-    margin: 0;
-}
-#img2:checked ~ .box2{
-    margin: 0 ;
-}
-#r3:checked ~ .slider .box3{
-    margin: 0;
-}
-#r4:checked ~ .slider .box4{
-    margin: 0;
+
+.container .conbox .text3 a{
+    color: rgb(200, 255, 255);
+    margin-left: 40px;
 }
