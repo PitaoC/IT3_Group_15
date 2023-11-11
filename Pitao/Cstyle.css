@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kay+Pho+Du:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.backicn{
+    background: #000;
+}
+.backicn a{
+    right: 0px;
+    height: 40px;
+    width: 50px;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.intro{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #151516;
+    background-color: #000;
+    font-family: 'Passion One', sans-serif;
+    text-shadow: 
+    0 0 2px rgb(115, 16, 245), 
+    0 0 5px rgb(115, 16, 245), 
+    0 0 10px rgb(115, 16, 245), 
+    0 0 20px rgb(115, 16, 245);
+}
+
+.slide-container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background: #000;
+}
+
+.slide-container a{
+    text-decoration: none;
+}
+
+.slider{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 10px;
+    background: #000000;
+}
+.slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 30px;
+}
+.slider .slide .text{
+    position: absolute;
+    height: 600px;
+    width: 650px;
+    top: 0;
+    right: 0;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.slider .slide .text h1{
+    color: rgb(88, 0, 170);
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(0, 0, 0),
+    0 0 6px rgb(0, 0, 0), 
+    0 0 12px rgb(0, 0, 0), 
+    0 0 24px rgb(0, 0, 0);
+
+}
+.slider .slide .text p{
+    color: #a3a3a3;
+    font-size: 20px;
+    font-family: 'Kay Pho Du', serif;
+}
+.slider .slide .text1 li{
+    color: rgb(226, 226, 226);
+    font-size: 20px;
+}
+
+.slider .slide .text1 p1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.slider .slide .text2 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.slider .slide .text2 p1{
+    margin-left: 30px;
+}
+.slider .slide .text2 a{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.slider .slide .text3 a{
+    color: rgb(200, 255, 255);
+    margin-left: 40px;
+}
+
+.box1{
+    animation: slide1 30s linear infinite;
+}
+.box2{
+    animation: slide2 30s linear infinite;
+}
+.box3{
+    animation: slide3 30s linear infinite;
+}
+.box4{
+    animation: slide4 30s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: #000;
+}
+.container a{
+    text-decoration: none;
+}
+.container .conbox{
+    width: 900px;
+    background-color: #585858;
+    padding: 50px;
+    border-radius: 10px;
+}
+.container .conbox .header h1{
+    color: rgb(196, 196, 196);
+    font-size: 45px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(88, 0, 170),
+    0 0 6px rgb(88, 0, 170), 
+    0 0 12px rgb(88, 0, 170), 
+    0 0 24px rgb(88, 0, 170);
+}
+.container .conbox .header h2{
+    color: rgb(196, 196, 196);
+    font-size: 45px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(88, 0, 170),
+    0 0 6px rgb(88, 0, 170), 
+    0 0 12px rgb(88, 0, 170), 
+    0 0 24px rgb(88, 0, 170);
+}
+.container .conbox .header p{
+    color: #ffffff;
+    font-size: 20px;
+}
+.container .conbox .text{
+    height: 600px;
+    width: 650px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.container .conbox .text h1{
+    color: rgb(196, 196, 196);
+    font-size: 45px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 
+    0 0 3px rgb(88, 0, 170),
+    0 0 6px rgb(88, 0, 170), 
+    0 0 12px rgb(88, 0, 170), 
+    0 0 24px rgb(88, 0, 170);
+
+}
+
+.container .conbox .text p{
+    color: #a3a3a3;
+    font-size: 20px;
+    font-family: 'Kay Pho Du', serif;
+}
+.container .conbox .text1 li{
+    color: rgb(226, 226, 226);
+    font-size: 20px;
+}
+
+.container .conbox .text1 p1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container .conbox .text2 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container .conbox .text2 p1{
+    margin-left: 30px;
+}
+.container .conbox .text2 a{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.container .conbox .text3 a{
+    color: rgb(200, 255, 255);
+    margin-left: 40px;
+}
